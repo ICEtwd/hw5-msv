@@ -21,20 +21,23 @@ public class Main {
         snums[1] = 225;
 
         //Task 2
-        System.out.print(one + ",");
-        System.out.print(two + ",");
-        System.out.print(three);
+        for (int i = 0; i < 3; i++) {
+            System.out.print(numbers[i]+",");
+        }
+
 
         System.out.println();
 
-        System.out.print(nums[0] + ",");
-        System.out.print(nums[1] + ",");
-        System.out.print(nums[2]);
+        for (int i = 0; i < 3; i++) {
+            System.out.print(nums[i]+",");
+        }
 
         System.out.println();
 
-        System.out.print(snums[0] + ",");
-        System.out.print(snums[1]);
+        for (int i = 0; i < 2; i++) {
+            System.out.print(snums[i]+",");
+        }
+
 
         //Task 3
         System.out.println();
@@ -57,26 +60,16 @@ public class Main {
 
 
         //Task 4
+        System.out.println();
 
-        if (one % 2 != 0){
-            one++;
-            System.out.println(one);
-        }else{
-            System.out.println(numbers[0]);
+        for (int i = 0; i < 3; i++) {
+            if (numbers[i] %2 !=0){
+                numbers[i]++;
+                System.out.print(numbers[i]);
+            }else {
+                System.out.print(numbers[i]);
+            }
         }
-        if (two %2 !=0){
-            two++;
-            System.out.println(two);
-        }else{
-            System.out.println(numbers[1]);
-        }
-        if (three %2  != 0){
-            three++;
-            System.out.println(three);
-        }else {
-            System.out.println(numbers[2]);
-        }
-
 
 
     }
