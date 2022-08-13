@@ -8,9 +8,6 @@ public class Main {
         numbers[0] = 1;
         numbers[1] = 2;
         numbers[2] = 3;
-        int one = numbers[0];
-        int two = numbers[1];
-        int three = numbers[2];
 
         //2
         double[] nums = {1.57, 7.654, 9.986};
@@ -21,30 +18,40 @@ public class Main {
         snums[1] = 225;
 
         //Task 2
-        for (int i = 0; i < 3; i++) {
-            System.out.print(numbers[i]+",");
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print(numbers[i]);
+            if (numbers[i]<numbers[2]){
+                System.out.print(",");
+            }
         }
 
 
         System.out.println();
 
-        for (int i = 0; i < 3; i++) {
-            System.out.print(nums[i]+",");
+        for (int i = 0; i < nums.length; i++) {
+            System.out.print(nums[i]);
+            if (nums[i]<nums[2]){
+                System.out.print(",");
+            }
         }
 
         System.out.println();
 
-        for (int i = 0; i < 2; i++) {
-            System.out.print(snums[i]+",");
+        for (int i = 0; i < snums.length; i++) {
+            System.out.print(snums[i]);
+            if (numbers[i]<numbers[1]){
+                System.out.print(",");
+            }
         }
 
 
         //Task 3
         System.out.println();
 
-        System.out.print(three + ",");
-        System.out.print(two + ",");
-        System.out.print(one);
+        ;
+        System.out.print(numbers[2] + ",");
+        System.out.print(numbers[1] + ",");
+        System.out.print(numbers[0]);
 
         System.out.println();
 
@@ -62,12 +69,15 @@ public class Main {
         //Task 4
         System.out.println();
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] %2 !=0){
                 numbers[i]++;
                 System.out.print(numbers[i]);
             }else {
                 System.out.print(numbers[i]);
+            }
+            if (numbers[i]<numbers[2]){
+                System.out.print(",");
             }
         }
 
