@@ -20,7 +20,7 @@ public class Main {
         //Task 2
         for (int i = 0; i < numbers.length; i++) {
             System.out.print(numbers[i]);
-            if (i<numbers.length){
+            if (i<numbers.length-1){
                 System.out.print(",");
             }
         }
@@ -30,7 +30,7 @@ public class Main {
 
         for (int i = 0; i < nums.length; i++) {
             System.out.print(nums[i]);
-            if (i<numbers.length){
+            if (i<numbers.length-1){
                 System.out.print(",");
             }
         }
@@ -50,7 +50,7 @@ public class Main {
 
         for (int i = numbers.length -1; i >= 0; i--) {
             System.out.print(numbers[i]);
-            if (i<numbers.length){
+            if (i>0){
                 System.out.print(",");
             }
         }
@@ -60,7 +60,7 @@ public class Main {
 
         for (int i = nums.length -1; i >= 0; i--) {
             System.out.print(nums[i]);
-            if (i<nums.length){
+            if (i>0){
                 System.out.print(",");
             }
         }
@@ -70,7 +70,7 @@ public class Main {
 
         for (int i = snums.length -1; i >= 0; i--) {
             System.out.print(snums[i]);
-            if (i<snums.length){
+            if (i>0){
                 System.out.print(",");
             }
         }
