@@ -48,7 +48,7 @@ public class Main {
         //Task 3
         System.out.println();
 
-        for (int i = -1; i >= 0; i--) {
+        for (int i = numbers.length -1; i >= 0; i--) {
             System.out.print(numbers[i]);
             if (i<numbers.length){
                 System.out.print(",");
@@ -58,15 +58,22 @@ public class Main {
 
         System.out.println();
 
-
-        System.out.print(nums[2] + ",");
-        System.out.print(nums[1] + ",");
-        System.out.print(nums[0]);
+        for (int i = nums.length -1; i >= 0; i--) {
+            System.out.print(nums[i]);
+            if (i<nums.length){
+                System.out.print(",");
+            }
+        }
 
         System.out.println();
 
-        System.out.print(snums[1] + ",");
-        System.out.print(snums[0]);
+
+        for (int i = snums.length -1; i >= 0; i--) {
+            System.out.print(snums[i]);
+            if (i<snums.length){
+                System.out.print(",");
+            }
+        }
 
 
         //Task 4
